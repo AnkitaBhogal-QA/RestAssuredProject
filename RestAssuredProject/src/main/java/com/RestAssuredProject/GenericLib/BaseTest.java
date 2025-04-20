@@ -1,7 +1,19 @@
-package com.Thinksys.restfulbooker;
+package com.RestAssuredProject.GenericLib;
+
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 import org.json.JSONObject;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
+import com.RestAssuredProject.POJO.Booking;
+import com.RestAssuredProject.POJO.Bookingdates;
+import com.RestAssuredProject.POJO.Bookingid;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -18,6 +30,18 @@ import io.restassured.specification.RequestSpecification;
 
 public class BaseTest {
 	public RequestSpecification specs;
+	public static FileWriter writer ;
+	
+	 @BeforeSuite
+	    public void clearLogFile() {
+	        try {
+	            Files.createDirectories(Paths.get("logs/"));
+	            writer = new FileWriter("logs/api-test-log.txt", false); // false = overwrite mode
+	            writer.write(""); // Clear content
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    }
 	
 	/*
 	 * This method is use to setup the base URL before every method execution
@@ -77,5 +101,10 @@ public class BaseTest {
 		return response;
 	}
 	
+	@AfterSuite
+	public void closeFile() throws IOException
+	{
+		  writer.close();
+	}
 	
 }

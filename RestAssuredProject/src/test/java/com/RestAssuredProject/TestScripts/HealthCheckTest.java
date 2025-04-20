@@ -1,8 +1,11 @@
-package com.Thinksys.restfulbooker;
+package com.RestAssuredProject.TestScripts;
 
 import org.testng.Assert;
 
 import org.testng.annotations.Test;
+
+import com.RestAssuredProject.GenericLib.BaseTest;
+import com.RestAssuredProject.GenericLib.ResponseLogger;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Cookie;
@@ -35,6 +38,8 @@ public class HealthCheckTest extends BaseTest {
 	     int statusCode = response.getStatusCode();
 	     
 	     System.out.println("Response: " + response.asString());
+	     
+	    ResponseLogger.logResponseToSharedFile(response, "healthCheckTest");
 	     
 	     Assert.assertEquals(statusCode, 201, "Expected status code is not returned.");
 	}
@@ -71,6 +76,8 @@ public class HealthCheckTest extends BaseTest {
 		 //Get Cookies
 		 Cookies cookie = response.getDetailedCookies();
 		 System.out.println("Cookies: " + cookie);
+		 
+		ResponseLogger.logResponseToSharedFile(response, "headersAndCookiesTest");
 	}
 	
 }

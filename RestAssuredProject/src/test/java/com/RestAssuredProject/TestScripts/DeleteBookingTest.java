@@ -1,13 +1,16 @@
-package com.Thinksys.restfulbooker;
+package com.RestAssuredProject.TestScripts;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.RestAssuredProject.GenericLib.BaseTest;
+import com.RestAssuredProject.GenericLib.ResponseLogger;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class DeleteBooking extends BaseTest {
+public class DeleteBookingTest extends BaseTest {
 
 	@Test
 	public void deleteBookingTest() {
@@ -28,6 +31,8 @@ public class DeleteBooking extends BaseTest {
 		Response responseAfterDelete = RestAssured.given(specs).get("/booking/" +bookingId );
 		
 		responseAfterDelete.print();
+		
+		ResponseLogger.logResponseToSharedFile(response, "deleteBookingTest");
 		
 		Assert.assertEquals(responseAfterDelete.getBody().asString(), "Not Found", "Body should say Not Found");
 	}

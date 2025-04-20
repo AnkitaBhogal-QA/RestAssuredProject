@@ -3,13 +3,13 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.Thinksys.restfulbooker.HealthCheckTest"/>
-      <class name="com.Thinksys.restfulbooker.PartialUpdateBookingTest"/>
-      <class name="com.Thinksys.restfulbooker.GetBookingsTest"/>
-      <class name="com.Thinksys.restfulbooker.GetBookingsByIdTest"/>
-      <class name="com.Thinksys.restfulbooker.UpdateBookingTest"/>
-      <class name="com.Thinksys.restfulbooker.CreateBookingsTest"/>
-      <class name="com.Thinksys.restfulbooker.DeleteBooking"/>
+      <class name="com.RestAssuredProject.TestScripts.CreateBookingsTest"/>
+      <class name="com.RestAssuredProject.TestScripts.DeleteBookingTest"/>
+      <class name="com.RestAssuredProject.TestScripts.GetBookingsByIdTest"/>
+      <class name="com.RestAssuredProject.TestScripts.GetBookingsTest"/>
+      <class name="com.RestAssuredProject.TestScripts.PartialUpdateBookingTest"/>
+      <class name="com.RestAssuredProject.TestScripts.HealthCheckTest"/>
+      <class name="com.RestAssuredProject.TestScripts.UpdateBookingTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

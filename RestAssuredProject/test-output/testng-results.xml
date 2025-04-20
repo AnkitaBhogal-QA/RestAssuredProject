@@ -1,21 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="11" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-20T01:06:23 IST" name="Default suite" finished-at="2025-04-20T01:06:30 IST" duration-ms="6573">
+  <suite started-at="2025-04-20T09:27:02 IST" name="Suite" finished-at="2025-04-20T09:27:32 IST" duration-ms="30114">
     <groups>
     </groups>
-    <test started-at="2025-04-20T01:06:23 IST" name="Default test" finished-at="2025-04-20T01:06:30 IST" duration-ms="6573">
-      <class name="com.Thinksys.restfulbooker.DeleteBooking">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Thinksys.restfulbooker.DeleteBooking@2e6a8155]" started-at="2025-04-20T01:06:23 IST" name="setUp" finished-at="2025-04-20T01:06:24 IST" duration-ms="406" status="PASS">
+    <test started-at="2025-04-20T09:27:02 IST" name="Test" finished-at="2025-04-20T09:27:32 IST" duration-ms="30114">
+      <class name="com.RestAssuredProject.TestScripts.GetBookingsByIdTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.RestAssuredProject.TestScripts.GetBookingsByIdTest@3e27ba32]" started-at="2025-04-20T09:27:11 IST" name="setUp" finished-at="2025-04-20T09:27:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="deleteBookingTest()[pri:0, instance:com.Thinksys.restfulbooker.DeleteBooking@2e6a8155]" started-at="2025-04-20T01:06:24 IST" name="deleteBookingTest" finished-at="2025-04-20T01:06:30 IST" duration-ms="6122" status="PASS">
+        <test-method signature="getBookingsById()[pri:0, instance:com.RestAssuredProject.TestScripts.GetBookingsByIdTest@3e27ba32]" started-at="2025-04-20T09:27:11 IST" name="getBookingsById" finished-at="2025-04-20T09:27:14 IST" duration-ms="3072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBookingsById -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.RestAssuredProject.TestScripts.GetBookingsByIdTest@3e27ba32]" started-at="2025-04-20T09:27:14 IST" name="setUp" finished-at="2025-04-20T09:27:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getBookingsXMLById()[pri:0, instance:com.RestAssuredProject.TestScripts.GetBookingsByIdTest@3e27ba32]" started-at="2025-04-20T09:27:14 IST" name="getBookingsXMLById" finished-at="2025-04-20T09:27:17 IST" duration-ms="3042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBookingsXMLById -->
+      </class> <!-- com.RestAssuredProject.TestScripts.GetBookingsByIdTest -->
+      <class name="com.RestAssuredProject.TestScripts.CreateBookingsTest">
+        <test-method is-config="true" signature="clearLogFile()[pri:0, instance:com.RestAssuredProject.TestScripts.CreateBookingsTest@5d0bf09b]" started-at="2025-04-20T09:27:02 IST" name="clearLogFile" finished-at="2025-04-20T09:27:02 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearLogFile -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.RestAssuredProject.TestScripts.CreateBookingsTest@5d0bf09b]" started-at="2025-04-20T09:27:02 IST" name="setUp" finished-at="2025-04-20T09:27:02 IST" duration-ms="415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createBookingPOJOTest()[pri:0, instance:com.RestAssuredProject.TestScripts.CreateBookingsTest@5d0bf09b]" started-at="2025-04-20T09:27:02 IST" name="createBookingPOJOTest" finished-at="2025-04-20T09:27:06 IST" duration-ms="3525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBookingPOJOTest -->
+        <test-method is-config="true" signature="closeFile()[pri:0, instance:com.RestAssuredProject.TestScripts.CreateBookingsTest@5d0bf09b]" started-at="2025-04-20T09:27:32 IST" name="closeFile" finished-at="2025-04-20T09:27:32 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeFile -->
+      </class> <!-- com.RestAssuredProject.TestScripts.CreateBookingsTest -->
+      <class name="com.RestAssuredProject.TestScripts.GetBookingsTest">
+        <test-method signature="getAllBookingIds()[pri:0, instance:com.RestAssuredProject.TestScripts.GetBookingsTest@7ef82753]" started-at="2025-04-20T09:27:17 IST" name="getAllBookingIds" finished-at="2025-04-20T09:27:19 IST" duration-ms="1903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllBookingIds -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.RestAssuredProject.TestScripts.GetBookingsTest@7ef82753]" started-at="2025-04-20T09:27:17 IST" name="setUp" finished-at="2025-04-20T09:27:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.RestAssuredProject.TestScripts.GetBookingsTest@7ef82753]" started-at="2025-04-20T09:27:19 IST" name="setUp" finished-at="2025-04-20T09:27:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getBookingIdsWithFilter()[pri:0, instance:com.RestAssuredProject.TestScripts.GetBookingsTest@7ef82753]" started-at="2025-04-20T09:27:19 IST" name="getBookingIdsWithFilter" finished-at="2025-04-20T09:27:21 IST" duration-ms="2144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBookingIdsWithFilter -->
+      </class> <!-- com.RestAssuredProject.TestScripts.GetBookingsTest -->
+      <class name="com.RestAssuredProject.TestScripts.DeleteBookingTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.RestAssuredProject.TestScripts.DeleteBookingTest@117159c0]" started-at="2025-04-20T09:27:06 IST" name="setUp" finished-at="2025-04-20T09:27:06 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteBookingTest()[pri:0, instance:com.RestAssuredProject.TestScripts.DeleteBookingTest@117159c0]" started-at="2025-04-20T09:27:06 IST" name="deleteBookingTest" finished-at="2025-04-20T09:27:11 IST" duration-ms="5061" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteBookingTest -->
-      </class> <!-- com.Thinksys.restfulbooker.DeleteBooking -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.RestAssuredProject.TestScripts.DeleteBookingTest -->
+      <class name="com.RestAssuredProject.TestScripts.HealthCheckTest">
+        <test-method signature="headersAndCookiesTest()[pri:0, instance:com.RestAssuredProject.TestScripts.HealthCheckTest@202b0582]" started-at="2025-04-20T09:27:26 IST" name="headersAndCookiesTest" finished-at="2025-04-20T09:27:27 IST" duration-ms="1612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headersAndCookiesTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.RestAssuredProject.TestScripts.HealthCheckTest@202b0582]" started-at="2025-04-20T09:27:26 IST" name="setUp" finished-at="2025-04-20T09:27:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="healthCheckTest()[pri:0, instance:com.RestAssuredProject.TestScripts.HealthCheckTest@202b0582]" started-at="2025-04-20T09:27:27 IST" name="healthCheckTest" finished-at="2025-04-20T09:27:29 IST" duration-ms="1710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- healthCheckTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.RestAssuredProject.TestScripts.HealthCheckTest@202b0582]" started-at="2025-04-20T09:27:27 IST" name="setUp" finished-at="2025-04-20T09:27:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- com.RestAssuredProject.TestScripts.HealthCheckTest -->
+      <class name="com.RestAssuredProject.TestScripts.PartialUpdateBookingTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.RestAssuredProject.TestScripts.PartialUpdateBookingTest@3b0fe47a]" started-at="2025-04-20T09:27:21 IST" name="setUp" finished-at="2025-04-20T09:27:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="partialUpldateBookingTest()[pri:0, instance:com.RestAssuredProject.TestScripts.PartialUpdateBookingTest@3b0fe47a]" started-at="2025-04-20T09:27:21 IST" name="partialUpldateBookingTest" finished-at="2025-04-20T09:27:26 IST" duration-ms="4580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- partialUpldateBookingTest -->
+      </class> <!-- com.RestAssuredProject.TestScripts.PartialUpdateBookingTest -->
+      <class name="com.RestAssuredProject.TestScripts.UpdateBookingTest">
+        <test-method signature="updateBookingTest()[pri:0, instance:com.RestAssuredProject.TestScripts.UpdateBookingTest@235ecd9f]" started-at="2025-04-20T09:27:29 IST" name="updateBookingTest" finished-at="2025-04-20T09:27:32 IST" duration-ms="2985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBookingTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.RestAssuredProject.TestScripts.UpdateBookingTest@235ecd9f]" started-at="2025-04-20T09:27:29 IST" name="setUp" finished-at="2025-04-20T09:27:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- com.RestAssuredProject.TestScripts.UpdateBookingTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

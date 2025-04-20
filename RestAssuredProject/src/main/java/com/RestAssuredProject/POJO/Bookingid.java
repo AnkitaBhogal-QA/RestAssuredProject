@@ -1,4 +1,4 @@
-package com.Thinksys.restfulbooker;
+package com.RestAssuredProject.POJO;
 
 public class Bookingid {
 

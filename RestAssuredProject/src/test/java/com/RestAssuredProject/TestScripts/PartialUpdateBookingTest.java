@@ -1,9 +1,12 @@
-package com.Thinksys.restfulbooker;
+package com.RestAssuredProject.TestScripts;
 
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import com.RestAssuredProject.GenericLib.BaseTest;
+import com.RestAssuredProject.GenericLib.ResponseLogger;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -47,6 +50,8 @@ public class PartialUpdateBookingTest extends BaseTest {
 
 		responseUpdate.print();
 		int statusCode = responseUpdate.statusCode();
+		
+		ResponseLogger.logResponseToSharedFile(responseUpdate, "partialUpldateBookingTest");
 
 		// Validation
 		Assert.assertEquals(statusCode, 200, "Status code is not 200");

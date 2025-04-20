@@ -1,9 +1,12 @@
-package com.Thinksys.restfulbooker;
+package com.RestAssuredProject.TestScripts;
 
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import com.RestAssuredProject.GenericLib.BaseTest;
+import com.RestAssuredProject.GenericLib.ResponseLogger;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -59,6 +62,8 @@ public class CreateBookingsTest extends BaseTest {
 
 		// Validation
 		Assert.assertEquals(statusCode, 200, "Status code is not 200");
+		
+		ResponseLogger.logResponseToSharedFile(response, "createBookingPOJOTest");
 
 		// Here we will use soft assert for validation so that even if it fails it does
 		// not impacts our execution

@@ -1,9 +1,12 @@
-package com.Thinksys.restfulbooker;
+package com.RestAssuredProject.TestScripts;
 
 import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.RestAssuredProject.GenericLib.BaseTest;
+import com.RestAssuredProject.GenericLib.ResponseLogger;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -50,6 +53,8 @@ public class GetBookingsTest extends BaseTest {
 		
 		Assert.assertEquals(statusCode,  200, "Status code is not 200");
 		
+		ResponseLogger.logResponseToSharedFile(response, "getAllBookingIds");
+		
 		List<Integer> bookingIds = response.jsonPath().getList("bookingid");
 		
 		Assert.assertFalse(bookingIds.isEmpty() , "List is empty but it should not be");
@@ -70,6 +75,8 @@ public class GetBookingsTest extends BaseTest {
 		int statusCode = response.statusCode();
 		
 		Assert.assertEquals(statusCode,  200, "Status code is not 200");
+		
+		ResponseLogger.logResponseToSharedFile(response, "getBookingIdsWithFilter");
 		
 		List<Integer> bookingIds = response.jsonPath().getList("bookingid");
 		
